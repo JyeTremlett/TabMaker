@@ -1,0 +1,101 @@
+
+/* overall styling */
+body {
+    background-color: #F1F1F1;
+}
+
+p {
+    font-family: monospace;
+}
+
+
+/* nav bar styling */
+.nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+
+.nav-main ul li {
+    list-style: none;
+    line-height: 60px;
+}
+
+.nav-main ul li a{
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* main content styling */
+.main-content {
+    padding-top: 60px;
+}
+
+.main-content .tab_interactive {
+    display: block;    
+}
+
+.main-content .tab_interactive input[type=number] {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: text;
+}
+
+.main-content .tab_input input[type=button] {
+    width: fit-content;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 5px 3px 5px;
+    background-color: darkkhaki;
+    border-radius: 5px;
+}
+
+.tab_input .width-selector input[type=number] {
+    border: 0.5px solid black;
+}
+
+input[type=radio] {
+    appearance: radio;
+}
+
+
+
+
+
+
+
+
+
+
+/* HIDE ARROWS IN INPUT BOXES */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}

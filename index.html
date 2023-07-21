@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Maker</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        
+        <h1>Easy Tab Creator</h1>
+        
+        <br>
+
+        <div class="tab_input" method="get">
+            <h2>Please Select a Tab Width</h2>
+            <form class="width-selector">
+                <input type="radio" id="width8" name="max-width" value="8">
+                <label for="8">8</label><br>
+                <input type="radio" id="width16" name="max-width" value="16">
+                <label for="16">16</label><br>
+
+                <!-- todo: add an option to enter any width -->
+                <!-- <input type="number" id="other" name="max-width" value="other">
+                <label for="other">Other</label> -->
+
+                <input type="button" id="submit-width-btn" value="submit" onclick="startFlow()">
+            </form>
+
+            <br>
+            
+            <form class="tab_interactive" method="get">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="tab_visualised">
+        </div>
+    </div>
+    
+    
+
+    <script src="js/tabdisplayer.js"></script>
+
+</body>
+</html>
