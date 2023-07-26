@@ -20,17 +20,20 @@
 
     <div class="main-content">
         
-        <h1>Easy Tab Creator</h1>
+        <h1>Tab Creator</h1>
         
         <br>
 
+        <!-- user input for tab creation -->
         <div class="tab_input" method="get">
             <h2>Please Select a Tab Width</h2>
+
+            <!-- div for user selecting tab width -->
             <form class="width-selector">
                 <input type="radio" id="width8" name="max-width" value="8">
-                <label for="8">8</label><br>
+                <label for="width8">8</label><br>
                 <input type="radio" id="width16" name="max-width" value="16">
-                <label for="16">16</label><br>
+                <label for="width16">16</label><br>
 
                 <!-- todo: add an option to enter any width -->
                 <!-- <input type="number" id="other" name="max-width" value="other">
@@ -40,20 +43,23 @@
             </form>
 
             <br>
-            
+
+            <!-- div for user input of tab values -->
             <form class="tab_interactive" method="get">
             </form>
+
+            <br>
+            
+            <!-- div for visualisation of tab for user -->
+            <div class="tab_visualised">
+            </div>
         </div>
 
-        <br>
 
-        <div class="tab_visualised">
-        </div>
     </div>
     
     
 
     <script src="js/tabdisplayer.js"></script>
-
 </body>
 </html>

@@ -2,11 +2,20 @@
 /* overall styling */
 body {
     background-color: #F1F1F1;
+    font-family: arial;
 }
 
 p {
     font-family: monospace;
 }
+
+h1 {
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: large;
+}
+
 
 
 /* nav bar styling */
@@ -38,14 +47,16 @@ p {
     padding: 0 10px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: arial;
-    font-size: 16px;
+    font-size: large;
     cursor: pointer;
 }
+
+
 
 /* main content styling */
 .main-content {
     padding-top: 60px;
+    padding-left: 10px;
 }
 
 .main-content .tab_interactive {
@@ -62,7 +73,6 @@ p {
 
 .main-content .tab_input input[type=button] {
     width: fit-content;
-    /* border: 1px solid black; */
     border-radius: 5px;
     cursor: pointer;
     padding: 3px 5px 3px 5px;

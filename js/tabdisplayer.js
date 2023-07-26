@@ -15,17 +15,41 @@ function startFlow() {
         width = document.getElementById('width16').value;
     }
 
-    console.log(width);
     // create tab object and show user input interface
     let tab = new Tab(width);
     tab.displayInputBoxes('.tab_interactive');
 
     // add onclick event listener for submit button
-    let btn = document.getElementById('submit-tab-btn')
+    let btn = document.getElementById('submit-tab-btn');
     btn.addEventListener('click', function () {
         tab.getInput(); // update tab.data property before displaying tab
         tab.displayTab('.tab_visualised');
     }, false);
+}
+
+
+/*
+Function to be called when a user chooses to copy a tab to the clipboard. Function copies content of
+the "tab-output" html element and then inserts newline characters as appropriate.
+*/
+function copyTabToClipboard(width) {
+
+    // get the text field
+    let text = document.getElementById("tab-output").textContent;
+    let output = '';
+
+    // set the string length between newlines based on the user's selected tab width
+    let index = (width*3) + 3;
+
+    // add newline in appropriate locations
+    for (let i = 0; i < 6; i++) 
+        output += text.slice((i*index), (i+1)*index) + '\n';
+    
+    // copy the text inside the text field
+    navigator.clipboard.writeText(output);
+    
+    // alert that the tab has been copied
+    alert("tab copied to clipboard");
 }
 
 
@@ -60,6 +84,8 @@ function Tab(width) {
 
         let context = document.querySelector(section);
         let output = '';
+
+        output += '<h2>Please Fill in the Tab as Required</h2>';
 
         for (let string = 0; string < 6; string++) {
             output += '|';
@@ -136,10 +162,21 @@ function Tab(width) {
             output += '<br>';
         }
 
+        output = ('<p id="tab-output">' + output + '</p>');
+
+        // add button to copy to clipboard
+        output += '<input type="button" id="copy-text-button" value="copy text">';
+
         // set context's inner html to a string representation of the tab
-        context.innerHTML = '<p>' + output + '</p>';
+        context.innerHTML = output;
+
+        // add onclick event listener for copy to clipboard button
+        let btn = document.getElementById('copy-text-button');
+        btn.addEventListener('click', function () {copyTabToClipboard(width);}, false);
     }
+
 }
+
 
 
 
