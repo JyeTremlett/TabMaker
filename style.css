@@ -33,7 +33,7 @@ h1 {
 .nav-main ul {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 15px;
+    padding: 0 15%;
 }
 
 .nav-main ul li {
@@ -41,22 +41,25 @@ h1 {
     line-height: 60px;
 }
 
-.nav-main ul li a{
+.nav-main ul li a {
     display: block;
     height: 100%;
     padding: 0 10px;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: large;
+    font-size: x-large;
     cursor: pointer;
+}
+
+.nav-main ul li .first-button {
+    padding-left: 0;
 }
 
 
 
 /* main content styling */
 .main-content {
-    padding-top: 60px;
-    padding-left: 10px;
+    padding: 70px 15% 0px 15%;
 }
 
 .main-content .tab_interactive {
