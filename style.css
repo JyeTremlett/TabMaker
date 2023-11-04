@@ -9,7 +9,7 @@ p {
     font-family: monospace;
 }
 
-h1 {
+h1, h2 {
     padding-top: 10px;
     text-transform: uppercase;
     text-decoration: none;
@@ -60,13 +60,20 @@ h1 {
 /* main content styling */
 .main-content {
     padding: 70px 15% 0px 15%;
+    font-size: large;
 }
 
-.main-content .tab_interactive {
-    display: block;    
+.main-content .tab-input {
+    display: block;   
+    padding: 5% 10% 50% 5%;
+    border: 0.5px solid black;
 }
 
-.main-content .tab_interactive input[type=number] {
+.main-content .tab-input .tab-segment-creator {
+    float: left;
+}
+
+.main-content .tab-input .tab-segment-creator input[type=number] {
     width: 25px;
     height: 25px;
     vertical-align: middle;
@@ -74,21 +81,26 @@ h1 {
     cursor: text;
 }
 
-.main-content .tab_input input[type=button] {
+.main-content .tab-input .tab-segment-creator input[type=button] {
     width: fit-content;
     border-radius: 5px;
     cursor: pointer;
     padding: 3px 5px 3px 5px;
     background-color: darkkhaki;
-    border-radius: 5px;
 }
 
-.tab_input .width-selector input[type=number] {
+/* unfinished feature: ability to enter any width 
+.tab-segment-value-input .width-selector input[type=number] {
     border: 0.5px solid black;
-}
+}*/
 
 input[type=radio] {
     appearance: radio;
+}
+
+.main-content .tab-input .full-tab-creator {
+    border: 0.5px solid black;
+    float: right;
 }
 
 

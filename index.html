@@ -24,37 +24,50 @@
         
         <br>
 
-        <!-- user input for tab creation -->
-        <div class="tab_input" method="get">
-            <h2>Please Select a Tab Width</h2>
+        <div class="tab-input">
 
-            <!-- div for user selecting tab width -->
-            <form class="width-selector">
-                <input type="radio" id="width8" name="max-width" value="8">
-                <label for="width8">8</label><br>
-                <input type="radio" id="width16" name="max-width" value="16">
-                <label for="width16">16</label><br>
+            <!-- user input for tab segment creation -->
+            <div class="tab-segment-creator" method="get">
 
-                <!-- todo: add an option to enter any width -->
-                <!-- <input type="number" id="other" name="max-width" value="other">
-                <label for="other">Other</label> -->
+                <!-- div for user selecting tab width -->
+                <form class="width-selector">
+                    <h2>Please Select a Tab Width</h2>
+                    <input type="radio" id="width8" name="max-width" value="8">
+                    <label for="width8">8</label><br>
+                    <input type="radio" id="width16" name="max-width" value="16">
+                    <label for="width16">16</label><br>
 
-                <input type="button" id="submit-width-btn" value="submit" onclick="startFlow()">
-            </form>
+                    <!-- todo: add an option to enter any width -->
+                    <!-- <input type="number" id="other" name="max-width" value="other">
+                    <label for="other">Other</label> -->
 
-            <br>
+                    <input type="button" id="submit-width-btn" value="submit" onclick="startFlow()">
+                </form>
+                <br>
 
-            <!-- div for user input of tab values -->
-            <form class="tab_interactive" method="get">
-            </form>
+                <!-- div for user input of tab values -->
+                <form class="tab-segment-value-input" method="get">
+                </form>
+                <br>
+                
+                <!-- div for visualisation of tab for user -->
+                <div class="tab-segment-visualised">
+                </div>
 
-            <br>
-            
-            <!-- div for visualisation of tab for user -->
-            <div class="tab_visualised">
             </div>
+
+            <!-- div for input of full tab  -->
+            <div class="full-tab-creator">
+                <label for="tab-text">Write Your Tab Here</label>
+                <br>
+                <textarea id="tab-text" name="tab-text" rows="20" cols="50"></textarea>
+            </div>
+
         </div>
 
+        
+
+        
 
     </div>
     

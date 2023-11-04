@@ -17,13 +17,13 @@ function startFlow() {
 
     // create tab object and show user input interface
     let tab = new Tab(width);
-    tab.displayInputBoxes('.tab_interactive');
+    tab.displayInputBoxes('.tab-segment-value-input');
 
     // add onclick event listener for submit button
-    let btn = document.getElementById('submit-tab-btn');
+    let btn = document.getElementById('submit-tab-segment-btn');
     btn.addEventListener('click', function () {
         tab.getInput(); // update tab.data property before displaying tab
-        tab.displayTab('.tab_visualised');
+        tab.displayTab('.tab-segment-visualised');
     }, false);
 }
 
@@ -99,7 +99,7 @@ function Tab(width) {
         }
 
         // add submit button
-        output += '<input type="button" id="submit-tab-btn" value="convert to text">';
+        output += '<input type="button" id="submit-tab-segment-btn" value="convert to text">';
 
         // set context's inner html to a string representation of the tab
         context.innerHTML = output;
