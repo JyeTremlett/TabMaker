@@ -102,14 +102,9 @@ border-radius: 1%;
     border: 0.5px solid black;
 }*/
 
-input[type=radio] {
-    appearance: radio;
-}
-
-
 /* styling for tab writing field */
 .main-content .tab-input .full-tab-creator {
-float: right;
+    float: right;
 }
 
 .main-content .tab-input .full-tab-creator textarea {
@@ -117,6 +112,10 @@ float: right;
     border: 0.5px solid black;
     border-radius: 1%;
     font-family: monospace;
+}
+
+input[type=radio] {
+    appearance: radio;
 }
 
 

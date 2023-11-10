@@ -4,6 +4,19 @@ Created: 7/7/2023
 */
 
 
+function displayDefaultFlow() {
+
+    // set deafult width
+    let width = 8;
+
+    // create tab object and show user input interface
+    let tab = new Tab(width);
+    tab.displayInputBoxes('.tab-segment-value-input');
+
+    // display empty tab
+    tab.displayTab('.tab-segment-visualised');  
+}
+
 function startFlow() {
 
     // get width from radio buttons
@@ -138,7 +151,7 @@ function Tab(width) {
 
         let note;
         let context = document.querySelector(section);
-        let output = 'Step 3: Copy Your Tab Finished Tab Segment<br>';
+        let output = '';
 
         let stringnames = ['e', 'B', 'G', 'D', 'A', 'E']
 

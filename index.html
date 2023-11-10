@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="displayDefaultFlow()">
     <nav class="nav-main">
         <div class="btn-toggle-nav" onclick="toggleNav()"></div>
         <ul>
@@ -32,7 +32,7 @@
                 <!-- div for user selecting tab width -->
                 <form class="width-selector">
                     <h2>Step 1: Select a Tab Segment Width</h2>
-                    <input type="radio" id="width8" name="max-width" value="8">
+                    <input type="radio" id="width8" name="max-width" value="8" checked="checked">
                     <label for="width8">8</label> 
                     <br>
                     <input type="radio" id="width16" name="max-width" value="16">
@@ -53,6 +53,7 @@
                 <br>
                 
                 <!-- div for visualisation of tab for user -->
+                <h2>Step 3: Copy Your Tab Finished Tab Segment</h2>
                 <div class="tab-segment-visualised">
                 </div>
 
@@ -62,7 +63,7 @@
             <div class="full-tab-creator">
                 <label for="tab-text">Step 4: Write Your Full Tab Here</label>
                 <br>
-                <textarea id="tab-text" name="tab-text" rows="20" cols="50"></textarea>
+                <textarea id="tab-text" name="tab-text" rows="30" cols="65"></textarea>
             </div>
 
         </div>
