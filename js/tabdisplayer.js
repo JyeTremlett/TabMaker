@@ -85,7 +85,7 @@ function Tab(width) {
         let context = document.querySelector(section);
         let output = '';
 
-        output += '<h2>Please Fill in the Tab as Required</h2>';
+        output += '<h2>Step 2: Fill in the Tab Segment as Required</h2>';
 
         for (let string = 0; string < 6; string++) {
             output += '|';
@@ -138,7 +138,7 @@ function Tab(width) {
 
         let note;
         let context = document.querySelector(section);
-        let output = '';
+        let output = 'Step 3: Copy Your Tab Finished Tab Segment<br>';
 
         let stringnames = ['e', 'B', 'G', 'D', 'A', 'E']
 
