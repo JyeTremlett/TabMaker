@@ -3,7 +3,9 @@ Author: Jye Tremlett
 Created: 7/7/2023
 */
 
-
+/*
+Function to be called onload to display default empty tab segment creation tools.
+*/
 function displayDefaultFlow() {
 
     // set deafult width
@@ -17,6 +19,11 @@ function displayDefaultFlow() {
     tab.displayTab('.tab-segment-visualised');  
 }
 
+/*
+Function to be called when when user chooses a width from the radio buttons and selects the submit button.
+A new tab object is created and the tab segment input boxes of the appropriate width are dispalyed. Function 
+then adds an event listener for the "convert to text" button once a user has entered the values for their tab.
+*/
 function startFlow() {
 
     // get width from radio buttons
@@ -32,7 +39,7 @@ function startFlow() {
     let tab = new Tab(width);
     tab.displayInputBoxes('.tab-segment-value-input');
 
-    // add onclick event listener for submit button
+    // add onclick event listener for "convert to text" button
     let btn = document.getElementById('submit-tab-segment-btn');
     btn.addEventListener('click', function () {
         tab.getInput(); // update tab.data property before displaying tab
