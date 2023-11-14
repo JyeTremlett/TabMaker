@@ -73,7 +73,7 @@ h2, label {
     display: block;   
     padding: 5% 10% 50% 5%;
     border: 0.5px solid black;
-border-radius: 1%;
+    border-radius: 1%;
 }
 
 /* styling for tab segment creation */

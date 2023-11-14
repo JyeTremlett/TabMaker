@@ -3,21 +3,7 @@ Author: Jye Tremlett
 Created: 7/7/2023
 */
 
-/*
-Function to be called onload to display default empty tab segment creation tools.
-*/
-function displayDefaultFlow() {
 
-    // set deafult width
-    let width = 8;
-
-    // create tab object and show user input interface
-    let tab = new Tab(width);
-    tab.displayInputBoxes('.tab-segment-value-input');
-
-    // display empty tab
-    tab.displayTab('.tab-segment-visualised');  
-}
 
 /*
 Function to be called when when user chooses a width from the radio buttons and selects the submit button.
@@ -35,9 +21,10 @@ function startFlow() {
         width = document.getElementById('width16').value;
     }
 
-    // create tab object and show user input interface
+    // create tab object, show user input interface, and show empty visualised tab segment
     let tab = new Tab(width);
     tab.displayInputBoxes('.tab-segment-value-input');
+    tab.displayTab('.tab-segment-visualised');
 
     // add onclick event listener for "convert to text" button
     let btn = document.getElementById('submit-tab-segment-btn');
