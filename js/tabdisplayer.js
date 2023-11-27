@@ -91,11 +91,11 @@ function Tab(width) {
 
         let context = document.querySelector(section);
         let output = '';
+        let stringnames = ['e', 'B', 'G', 'D', 'A', 'E']
 
-        output += '<h2>Step 2: Fill in the Tab Segment as Required</h2>';
-
+        // output += '<h2>Step 2: Fill in the Tab Segment as Required</h2>';
         for (let string = 0; string < 6; string++) {
-            output += '|';
+            output += (stringnames[string] + '|');
             for (let increment = 0; increment < width; increment++) {
                 // set id to the xy coordinates of the field. This is used later to identify
                 // where the field's input should be stored within the data[][] array.
@@ -106,7 +106,7 @@ function Tab(width) {
         }
 
         // add submit button
-        output += '<input type="button" id="submit-tab-segment-btn" value="convert to text">';
+        // output += '<input type="button" id="submit-tab-segment-btn" value="convert to text">';
 
         // set context's inner html to a string representation of the tab
         context.innerHTML = output;

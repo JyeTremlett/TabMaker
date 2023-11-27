@@ -48,34 +48,40 @@
                 <br>
 
                 <!-- div for user input of tab values -->
+                <h2>Step 2: Fill in the Tab Segment as Required</h2>
                 <form class="tab-segment-value-input" method="get">
                 </form>
+                <input type="button" id="submit-tab-segment-btn" value="convert to text">
+                <br>
                 <br>
                 
                 <!-- div for visualisation of tab for user -->
                 <h2>Step 3: Copy Your Tab Finished Tab Segment</h2>
                 <div class="tab-segment-visualised">
                 </div>
+                <br>
 
             </div>
-
+            
             <!-- div for input of full tab  -->
             <div class="full-tab-creator">
-                <label for="tab-text">Step 4: Write Your Full Tab Here</label>
-                <br>
-                <textarea id="tab-text" name="tab-text" rows="30" cols="65"></textarea>
+                <h2>Step 4: Write Your Full Tab Here</h2>
+                <!-- <label for="tab-text"></label> -->
+                <textarea id="tab-text" name="tab-text"></textarea>
             </div>
 
+            <!-- <input type="button" class="instructions-button" onclick="document.getElementById('instructions').scrollIntoView();" value="click to read details usage instructions"> -->
+
+        
         </div>
 
         
-
+        <br>
+        <div id="instructions"></div>
         
 
     </div>
     
-    
-
     <script src="js/tabdisplayer.js"></script>
 </body>
 </html>
