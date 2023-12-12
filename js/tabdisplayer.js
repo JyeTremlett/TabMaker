@@ -105,9 +105,6 @@ function Tab(width) {
             output += '|<br>';
         }
 
-        // add submit button
-        // output += '<input type="button" id="submit-tab-segment-btn" value="convert to text">';
-
         // set context's inner html to a string representation of the tab
         context.innerHTML = output;
     }

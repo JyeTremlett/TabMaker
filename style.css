@@ -13,8 +13,9 @@ p {
 h1 {
     padding-top: 10px;
     text-decoration: none;
-    font-size: x-large;
+    font-size: xx-large;
     text-transform: uppercase;
+    line-height: 60px;
 }
 
 h2, label {
@@ -152,6 +153,25 @@ input[type=radio] {
 
 
 /* Styling for instructions section */
+
+.main-content .instructions-button-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* border: 0.5px solid black; */
+    border-radius: 10px;
+    /* background-color: brown; */
+    background-color: rgb(174, 235, 176);
+
+}
+
+.main-content .instructions-button-container input[type=button] {
+    background: none;
+    font-size: large;
+}
+
+
 .main-content #instructions {
     padding: 70px 15% 50% 15%;
     background-color: white;

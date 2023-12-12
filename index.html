@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tab Maker</title>
+    <link rel="icon" href="img/acoustic-guitar.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +23,6 @@
         
         <h1>Tab Creator</h1>
         
-        <br>
 
         <div class="tab-input">
 
@@ -70,12 +70,19 @@
                 <textarea id="tab-text" name="tab-text"></textarea>
             </div>
 
-            <!-- <input type="button" class="instructions-button" onclick="document.getElementById('instructions').scrollIntoView();" value="click to read details usage instructions"> -->
+            
 
         
         </div>
 
+        <div class="instructions-button-container">
+            <input type="button" class="instructions-button" onclick="document.getElementById('instructions').scrollIntoView();" value="click to read detailed usage instructions">
+            <br>
+            <img src="img/arrow-pointing-down_1133.png" alt="Arrow Pointing Down" style="width:40px;height:40px;">
+        </div>
         
+        
+        <br>
         <br>
         <div id="instructions"></div>
         
@@ -83,5 +90,7 @@
     </div>
     
     <script src="js/tabdisplayer.js"></script>
+
+    <a href="https://www.flaticon.com/free-icons/guitar" title="guitar icons">Guitar icons created by Freepik - Flaticon</a>
 </body>
 </html>
